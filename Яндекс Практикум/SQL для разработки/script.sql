@@ -1,4 +1,7 @@
- WITH cte AS (  
+- language: SQL
+negative_pattern: '(?i:begin|boolean|package|exception)'
+
+WITH cte AS (  
 SELECT user_id  
   FROM stackoverflow.posts  
  GROUP BY user_id  
